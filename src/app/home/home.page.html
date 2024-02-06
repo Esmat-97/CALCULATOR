@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Big Calculator
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content >
+    <ion-grid>
+
+
+      <ion-row >
+        <ion-col size="5" id="a">
+
+
+
+      <ion-row>
+        <ion-col size="12">
+          <ion-input type="text" fill="solid" [(ngModel)]="display" disabled></ion-input>
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row>
+        <ion-col size="3" *ngFor="let button of  btns">
+          <ion-button expand="full" (click)="add(button)">
+            {{ button }}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+
+ </ion-col>
+    </ion-row>
+ 
+
+
+    </ion-grid>
+  </ion-content>
+  
